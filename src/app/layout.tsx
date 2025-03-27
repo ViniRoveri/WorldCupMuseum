@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const body = `bg-radial from-vr-white to-vr-lightYellow h-screen`
-const main = `h-[calc(100vh_-_64px)] w-full`
+const main = `h-full w-full`
 
 export default function RootLayout({
   children,
