@@ -1,4 +1,5 @@
 import MomentCanvas from "@/components/moments/MomentCanvas"
+import MomentTextBox from "@/components/moments/MomentTextBox"
 import { allMoments } from "@/domain/models/momentsYears"
 import { redirect } from "next/navigation"
 
@@ -14,6 +15,10 @@ export default async function page(props: Props){
    if(!moment) redirect('/')
       
    return (
+      <>
       <MomentCanvas component={<moment.component/>}/> 
+
+      <MomentTextBox moment={moment}/>
+      </>
    )
 }

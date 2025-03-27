@@ -11,7 +11,7 @@
   "dependencies": {
     "@react-three/drei": "^10.0.4",
     "@react-three/fiber": "^9.1.0",
-    "motion": "^12.6.2",
+    "gsap": "^3.12.7",
     "next": "15.2.3",
     "nextjs-toploader": "^3.8.16",
     "react": "^19.0.0",

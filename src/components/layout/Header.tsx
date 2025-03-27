@@ -1,5 +1,5 @@
 'use client'
-import momentsYears from "@/domain/models/momentsYears"
+import { allMoments } from "@/domain/models/momentsYears"
 import Link from "next/link"
 import { redirect } from "next/navigation"
 
@@ -10,18 +10,11 @@ const subtitle = `text-[11px] text-end`
 
 export default function Header(){
    function pickRandomMoment(){
-      const yearIndex = Math.floor(Math.random() * momentsYears.length)
-      const year = momentsYears[yearIndex]
+      const index = Math.floor(
+         Math.random() * allMoments.length
+      )
 
-      const roundIndex = Math.floor(Math.random() * year.rounds.length)
-      const round = year.rounds[roundIndex]
-
-      const gameIndex = Math.floor(Math.random() * round.games.length)
-      const game = round.games[gameIndex]
-
-      const momentIndex = Math.floor(Math.random() * game.moments.length)
-
-      return `/${yearIndex}/${roundIndex}/${gameIndex}/${momentIndex}`
+      return `/${allMoments[index].id}`
    }
 
    return (
