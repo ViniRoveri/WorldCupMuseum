@@ -1,5 +1,6 @@
 'use client'
-import MomentsList from "@/components/home/MomentsList";
+import MomentsListDesktop from "@/components/home/MomentsListDesktop";
+import MomentsListMobile from "@/components/home/MomentsListMobile";
 import YearInTimeline from "@/components/home/YearInTimeline";
 import momentsYears from "@/domain/models/momentsYears";
 import Game from "@/domain/types/Game";
@@ -21,7 +22,8 @@ export default function page(){
             )}
          </div>
 
-         <MomentsList selectedGame={selectedGame} selectedYear={selectedYear}/>
+         <MomentsListDesktop selectedGame={selectedGame} selectedYear={selectedYear}/>
+         <MomentsListMobile/>
       </section>
    )
 }

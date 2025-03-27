@@ -8,7 +8,8 @@ type Props = {
    selectedYear: number | null
 }
 
-const container = `fixed h-[calc(100vh_-64px)] p-4 pb-0 right-[calc(50vw_-500px)] top-[64px]`
+const container = `fixed h-[calc(100vh_-64px)] hidden p-4 pb-0 right-[calc(50vw_-500px)] top-[64px]
+md:inline-block`
 const momentsListTitle = `border-b font-bold opacity-0 text-[24px]`
 const momentsList = `flex flex-col gap-8 h-full items-center opacity-0 overflow-scroll pb-12 pt-6 w-full
 md:max-w-[500px]`
@@ -17,7 +18,7 @@ hover:scale-104`
 const momentImage = `border-2 h-[200px] mb-1 object-cover rounded-lg w-full`
 const momentTitle = `text-[18px] text-center`
 
-export default function MomentsList(props: Props){
+export default function MomentsListDesktop(props: Props){
    const transitionDuration = 0.3
    const [showedGame, setShowedGame] = useState<Game | null>(null)
    const [showedYear, setShowedYear] = useState<number | null>(null)
