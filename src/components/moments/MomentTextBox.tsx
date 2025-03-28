@@ -36,7 +36,7 @@ export default function MomentTextBox({moment}: Props){
    return (
       <div className={container} ref={refContainer}>
          <Accordion startOpen title={moment.title}>
-            <b>{moment.minutes} -</b> {moment.text}
+            <b>{moment.gameYear}</b> | <b>{moment.gameTitle}</b> | <b>{moment.minutes} -</b> {moment.text}
          </Accordion>
       </div>
    )

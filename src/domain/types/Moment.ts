@@ -4,6 +4,9 @@ type Moment = {
    minutes: string
    text: string
    title: string
+
+   gameTitle?: string
+   gameYear?: number
 }
 
 export default Moment
