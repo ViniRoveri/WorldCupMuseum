@@ -1,7 +1,7 @@
 'use client'
 import { allMoments } from "@/domain/models/momentsYears"
 import Link from "next/link"
-import { redirect } from "next/navigation"
+import { redirect, usePathname } from "next/navigation"
 
 const header = `bg-vr-white fixed h-[64px] left-0 shadow-md top-0 w-full z-10`
 const content = `flex h-full items-center justify-between max-w-[1111px] mx-auto px-4 w-full`
@@ -9,12 +9,17 @@ const h1 = `!font-title text-[22px] text-center`
 const subtitle = `text-[11px] text-end`
 
 export default function Header(){
+   const pathname = usePathname()
+
    function pickRandomMoment(){
       const index = Math.floor(
          Math.random() * allMoments.length
       )
 
-      return `/${allMoments[index].id}`
+      const link = `/${allMoments[index].id}`
+
+      if(pathname != link) return link
+      else return pickRandomMoment()
    }
 
    return (

@@ -16,7 +16,9 @@ export default function Accordion(props: Props){
 
    return (
       <div className="w-full">
-         <h2 className={title} onClick={() => setIsOpen(!isOpen)} style={{borderBottomLeftRadius: isOpen ? '0' : '0.75rem', borderBottomRightRadius: isOpen ? '0' : '0.75rem'}}>
+         <h2 className={title} onClick={() => setIsOpen(!isOpen)} style={{borderBottomLeftRadius: isOpen ? '0' : '0.75rem', borderBottomRightRadius: isOpen ? '0' : '0.75rem',
+            transition: 'border-bottom-left-radius 0.3s ease-in-out, border-bottom-right-radius 0.3s ease-in-out'
+         }}>
             {props.title}
 
             {isOpen ?
@@ -29,7 +31,8 @@ export default function Accordion(props: Props){
          <div className={content} style={{
             border: isOpen ? '1px solid' : 'none', 
             height: isOpen ? '200px' : '0', 
-            padding: isOpen ? '0.5rem' : '0'
+            padding: isOpen ? '0.5rem' : '0',
+            transition: 'all 0.3s ease-in-out'
          }}>
             {props.children}
          </div>

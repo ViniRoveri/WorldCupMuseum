@@ -23,7 +23,7 @@ const gameTitle = `cursor-pointer flex items-center justify-between py-2 text-[1
 hover:tracking-[0.4px]`
 
 export default function YearInTimeline(props: Props){
-   const transitionDuration = 0.3
+   const transitionDuration = 0.4
 
    const refYear = useRef<HTMLHeadingElement>(null)
    const refCountry = useRef<HTMLHeadingElement>(null)
@@ -31,6 +31,10 @@ export default function YearInTimeline(props: Props){
 
    useEffect(()=>{
       let tl = gsap.timeline({
+         defaults: {
+            duration: transitionDuration,
+            ease: 'back.out(2)'
+         },
          scrollTrigger: {
             start: 'top center',
             toggleActions: 'restart reset play reset',
@@ -42,8 +46,6 @@ export default function YearInTimeline(props: Props){
          opacity: 0,
          y: 30
       }, {
-         duration: transitionDuration,
-         ease: Bounce.easeOut,
          opacity: 1,
          y: 0
       })
@@ -52,8 +54,6 @@ export default function YearInTimeline(props: Props){
          opacity: 0,
          y: 30
       }, {
-         duration: transitionDuration,
-         ease: Bounce.easeOut,
          opacity: 1,
          y: 0
       })
@@ -62,8 +62,6 @@ export default function YearInTimeline(props: Props){
          opacity: 0,
          y: -30
       }, {
-         duration: transitionDuration,
-         ease: Bounce.easeOut,
          opacity: 1,
          y: 0
       })
@@ -93,6 +91,8 @@ export default function YearInTimeline(props: Props){
                               props.setSelectedGame(game)
                               props.setSelectedYear(props.year.year)
                            }
+                        }} style={{
+                           transition: 'font-weight 0.3s ease-in-out, letter-spacing 0.3s ease-in-out'
                         }} type='button'>
                            {game.title} <i className="ri-arrow-right-line"/>
                         </button>

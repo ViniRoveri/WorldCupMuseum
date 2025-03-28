@@ -16,7 +16,6 @@
 	color: var(--color-vr-darkYellow);
 	font-family: "Montserrat", sans-serif;
 	outline: none;
-	transition: 0.3s all ease-in-out;
 }
 
 ::-webkit-scrollbar{
