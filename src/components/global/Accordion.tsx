@@ -9,7 +9,7 @@ type Props = {
 
 const title = `bg-vr-lightYellow border cursor-pointer flex font-bold !font-title items-center justify-between px-4 py-2 rounded-t-xl text-[20px]
 sm:text-[24px]`
-const content = `bg-vr-lightYellow overflow-scroll`
+const content = `bg-vr-lightYellow overflow-y-scroll`
 
 export default function Accordion(props: Props){
    const [isOpen, setIsOpen] = useState(Boolean(props.startOpen))

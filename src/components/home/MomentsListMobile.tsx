@@ -10,10 +10,11 @@ type Props = {
    setSelectedGame: Dispatch<SetStateAction<Game | null>>
 }
 
-const container = `bg-vr-lightYellow border-t fixed h-[calc(100vh_-64px)] left-0 p-4 top-[64px] w-screen
+const container = `bg-vr-lightYellow border-t fixed h-[calc(100vh_-64px)] left-0 py-4 top-[64px] w-screen
 md:hidden`
-const title = `border-b font-bold opacity-0 py-2 text-[22px] text-center`
-const momentsList = `flex flex-col gap-8 h-full items-center opacity-0 overflow-scroll pb-24 pt-6 w-full`
+const header = `flex items-center justify-between px-4`
+const title = `border-b font-bold opacity-0 p-2 text-[22px] text-center`
+const momentsList = `flex flex-col gap-8 h-full items-center opacity-0 overflow-y-scroll pb-24 pt-6 px-4 w-full`
 const momentLink = `px-4 w-full`
 
 export default function MomentsListMobile(props: Props){
@@ -88,7 +89,7 @@ export default function MomentsListMobile(props: Props){
       <div className={container} style={{transform: isOpen ? 'translateY(0)' : 'translateY(100vh)', 
          transition: 'transform 0.3s ease-in-out'
       }}>
-         <div className="flex items-center justify-between">
+         <div className={header}>
             <button onClick={() => triggerClosing()} type='button'>
                <i className="ri-close-large-line text-[30px]"></i>
             </button>

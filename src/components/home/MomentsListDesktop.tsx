@@ -12,7 +12,7 @@ type Props = {
 const container = `fixed h-[calc(100vh_-64px)] hidden p-4 pb-0 right-[calc(50vw_-500px)] top-[64px]
 md:inline-block`
 const momentsListTitle = `border-b font-bold opacity-0 text-[24px]`
-const momentsList = `flex flex-col gap-8 h-full items-center max-w-[500px] opacity-0 overflow-scroll pb-12 pt-6 w-full`
+const momentsList = `flex flex-col gap-8 h-full items-center max-w-[500px] opacity-0 overflow-y-scroll pb-12 pt-6 w-full`
 const momentLink = `px-4 w-full`
 
 export default function MomentsListDesktop(props: Props){
