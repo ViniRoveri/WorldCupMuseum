@@ -17,7 +17,7 @@ const yearContainer = `w-full`
 const yearInfo = `border-b w-full`
 const yearTitle = `!font-title opacity-0 text-[100px]/20`
 const country = `opacity-0 text-[27px]`
-const roundsInfo = `flex flex-column gap-3 opacity-0 p-2`
+const roundsInfo = `flex flex-col gap-3 opacity-0 p-2`
 const roundTitle = `font-bold text-[22px]`
 const gameTitle = `cursor-pointer flex items-center justify-between py-2 text-[18px] w-full
 hover:tracking-[0.4px]`
