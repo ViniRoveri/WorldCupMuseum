@@ -84,7 +84,10 @@ export default function MomentsListDesktop(props: Props){
 
    return (
       <div className={container}>
-         <h3 className={momentsListTitle} ref={refTitle}>{showedYear} - {showedGame?.title}:</h3>
+         <div className={momentsListTitle} ref={refTitle}>
+            <h3>{showedYear}</h3>
+            <h3>{showedGame?.title}:</h3>
+         </div>
 
          <ul className={momentsList} ref={refList}>
             {showedGame?.moments.map(moment => 

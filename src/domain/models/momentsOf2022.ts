@@ -4,6 +4,7 @@ import TheGreatestSaveOfAllTime from "@/components/moments/2022/ArgentinaFrance/
 import WhenThePrinceAlmostBecameAKing from "@/components/moments/2022/CroatiaBrasil/WhenThePrinceAlmostBecameAKing";
 import TheArgentineSpiderMan from "@/components/moments/2022/ArgentinaCroatia/TheArgentineSpiderMan";
 import AfricasGreatestWhatIf from "@/components/moments/2022/FranceMorocco/AfricasGreatestWhatIf";
+import TheNeterlandsLastResort from "@/components/moments/2022/ArgentinaNetherlands/TheNeterlandsLastResort";
 
 const momentsOf2022: Year = {
    year: 2022,
@@ -12,6 +13,18 @@ const momentsOf2022: Year = {
       {
          title: 'Quarter-Finals',
          games: [
+            {
+               title: 'Argentina 2 (4) x (3) 2 Netherlands',
+               moments: [
+                  {
+                     id: 'TheNeterlandsLastResort',
+                     title: `The Netherland's Last Resort`,
+                     minutes: "90+10'",
+                     component: TheNeterlandsLastResort,
+                     text: `After over 100 minutes of a tense match full of drama, the dutch find themselves 2x1 down against Argentina in the last minute, and with a free kick to take right in front of the opposing box. Just when everyone expected a direct kick, the dutch execute a beautiful set piece that leads Wout Weghorst to have the chance of being face to face with Argentina's keeper. Even with all the pressure of this situation, Weghorst scores and ties the game at the last possible moment to send it to extra time.`
+                  }
+               ]
+            },
             {
                title: 'Croatia 1 (4) x (2) 1 Brazil',
                moments: [
@@ -23,7 +36,31 @@ const momentsOf2022: Year = {
                      text: `Following a tense and uneventful 0x0 draw in the 90 minutes, the game heads to extra time. After the first 15 minutes, Neymar starts a great passing play that ends up leading the ball right back to him face to face with Croatia's goalkeeper. At that situation Neymar dribbles the goalkeeper with a single touch and scores what is one of the most anthological goals of his whole career.`
                   }
                ]
-            }
+            },
+            // {
+            //    title: 'France 2 x 1 England',
+            //    moments: [
+            //       {
+            //          id: 'ItsNotComingHome',
+            //          title: `It's Not Coming Home`,
+            //          minutes: "",
+            //          component: ,
+            //          text: ``
+            //       }
+            //    ]
+            // },
+            // {
+            //    title: 'Morocco 1 x 0 Portugal',
+            //    moments: [
+            //       {
+            //          id: 'BecomingAfricasGreatest',
+            //          title: `Becoming Africa's Greatest`,
+            //          minutes: "",
+            //          component: ,
+            //          text: ``
+            //       }
+            //    ]
+            // }
          ]
       },
       {
