@@ -5,6 +5,7 @@ import WhenThePrinceAlmostBecameAKing from "@/components/moments/2022/CroatiaBra
 import TheArgentineSpiderMan from "@/components/moments/2022/ArgentinaCroatia/TheArgentineSpiderMan";
 import AfricasGreatestWhatIf from "@/components/moments/2022/FranceMorocco/AfricasGreatestWhatIf";
 import TheNeterlandsLastResort from "@/components/moments/2022/ArgentinaNetherlands/TheNeterlandsLastResort";
+import ItsNotComingHome from "@/components/moments/2022/FranceEngland/ItsNotComingHome";
 
 const momentsOf2022: Year = {
    year: 2022,
@@ -37,18 +38,18 @@ const momentsOf2022: Year = {
                   }
                ]
             },
-            // {
-            //    title: 'France 2 x 1 England',
-            //    moments: [
-            //       {
-            //          id: 'ItsNotComingHome',
-            //          title: `It's Not Coming Home`,
-            //          minutes: "",
-            //          component: ,
-            //          text: ``
-            //       }
-            //    ]
-            // },
+            {
+               title: 'France 2 x 1 England',
+               moments: [
+                  {
+                     id: 'ItsNotComingHome',
+                     title: `It's Not Coming Home`,
+                     minutes: "83'",
+                     component: ItsNotComingHome,
+                     text: `Approaching the last 10 minutes of a thrilling game, France scores with Olivier Giroud to break the tie and make it 2x1 against England. However when everything looked good for the french, only 5 minutes later a penalty kick is awarded to England, and their star Harry Kane has the chance of tying the game and send it to extra time. But when Kane goes for the ball he kicks it just above the crossbar, ending England's moral for the game and their participation in the World Cup.`
+                  }
+               ]
+            },
             // {
             //    title: 'Morocco 1 x 0 Portugal',
             //    moments: [
