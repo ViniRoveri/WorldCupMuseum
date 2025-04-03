@@ -6,6 +6,7 @@ import TheArgentineSpiderMan from "@/components/moments/2022/ArgentinaCroatia/Th
 import AfricasGreatestWhatIf from "@/components/moments/2022/FranceMorocco/AfricasGreatestWhatIf";
 import TheNeterlandsLastResort from "@/components/moments/2022/ArgentinaNetherlands/TheNeterlandsLastResort";
 import ItsNotComingHome from "@/components/moments/2022/FranceEngland/ItsNotComingHome";
+import BecomingAfricasGreatest from "@/components/moments/2022/MoroccoPortugal/BecomingAfricasGreatest";
 
 const momentsOf2022: Year = {
    year: 2022,
@@ -50,18 +51,18 @@ const momentsOf2022: Year = {
                   }
                ]
             },
-            // {
-            //    title: 'Morocco 1 x 0 Portugal',
-            //    moments: [
-            //       {
-            //          id: 'BecomingAfricasGreatest',
-            //          title: `Becoming Africa's Greatest`,
-            //          minutes: "",
-            //          component: ,
-            //          text: ``
-            //       }
-            //    ]
-            // }
+            {
+               title: 'Morocco 1 x 0 Portugal',
+               moments: [
+                  {
+                     id: 'BecomingAfricasGreatest',
+                     title: `Becoming Africa's Greatest`,
+                     minutes: "41'",
+                     component: BecomingAfricasGreatest,
+                     text: `Reaching the end of an uneventful first half, Morocco is tying 0x0 with Portugal. In one of the rare chance each teams could get, Attiyat Allah sends a cross perfectly for Youssef En-Nesyri to antecipate Portugal's goalkeeper and score a header to put Morocco ahead. Even after the second half full of pressure from Portugal, Morocco keep this lead to the end and become the first African country ever to reach the World Cup semi-finals.`
+                  }
+               ]
+            }
          ]
       },
       {
