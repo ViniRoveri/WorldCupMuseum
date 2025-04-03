@@ -25,6 +25,7 @@ hover:tracking-[0.4px]`
 export default function YearInTimeline(props: Props){
    const transitionDuration = 0.4
 
+   const refContainer = useRef<HTMLDivElement>(null)
    const refYear = useRef<HTMLHeadingElement>(null)
    const refCountry = useRef<HTMLHeadingElement>(null)
    const refRounds = useRef<HTMLDivElement>(null)
@@ -38,7 +39,7 @@ export default function YearInTimeline(props: Props){
          scrollTrigger: {
             start: 'top center',
             toggleActions: 'restart reset play reset',
-            trigger: refYear.current
+            trigger: refContainer.current
          }
       })
 
@@ -68,7 +69,7 @@ export default function YearInTimeline(props: Props){
    }, [])
 
    return (
-      <div className={yearContainer} key={props.year.year}>
+      <div className={yearContainer} key={props.year.year} ref={refContainer}>
          <div className={yearInfo}>
             <h2 className={yearTitle} ref={refYear}>{props.year.year}</h2>
             <h3 className={country} ref={refCountry}>{props.year.country}</h3>
