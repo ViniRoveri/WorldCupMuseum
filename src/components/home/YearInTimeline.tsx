@@ -38,7 +38,7 @@ export default function YearInTimeline(props: Props){
          },
          scrollTrigger: {
             start: 'top center',
-            toggleActions: 'restart reset play reset',
+            toggleActions: 'restart reverse play reverse',
             trigger: refContainer.current
          }
       })
