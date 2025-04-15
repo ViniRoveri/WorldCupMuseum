@@ -15,7 +15,7 @@ type Props = {
 
 const yearContainer = `w-full`
 const yearInfo = `border-b w-full`
-const yearTitle = `!font-title opacity-0 text-[100px]/20`
+const yearTitle = `!font-title opacity-0 text-[100px]/27`
 const country = `opacity-0 text-[27px]`
 const roundsInfo = `flex flex-col gap-3 opacity-0 p-2`
 const roundTitle = `font-bold text-[22px]`
@@ -72,7 +72,7 @@ export default function YearInTimeline(props: Props){
       <div className={yearContainer} key={props.year.year} ref={refContainer}>
          <div className={yearInfo}>
             <h2 className={yearTitle} ref={refYear}>{props.year.year}</h2>
-            <h3 className={country} ref={refCountry}>{props.year.country}</h3>
+            <h3 className={country} ref={refCountry}><i className="ri-map-pin-2-line"/> {props.year.country}</h3>
          </div>
 
          <div className={roundsInfo} ref={refRounds}>

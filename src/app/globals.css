@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
+@font-face {
+	font-family: 'TitleFont';
+	src: url('/fonts/AdiCupQ2022.ttf') format('truetype');
+}
+
 @theme {
-	--font-title: "Sriracha", cursive;
+	--font-title: "TitleFont", serif;
 	--color-vr-white: #faf1e6;
 	--color-vr-lightYellow: #fff7cc;
 	--color-vr-yellow: #FFD700;

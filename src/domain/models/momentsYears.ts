@@ -2,10 +2,12 @@ import Year from "../types/Year";
 import Moment from "../types/Moment";
 import momentsOf2022 from "./momentsOf2022";
 import momentsOf2018 from "./momentsOf2018";
+import momentsOf2014 from "./momentsOf2014";
 
 const momentsYears: Year[] = [
    momentsOf2022,
-   momentsOf2018
+   momentsOf2018,
+   momentsOf2014
 ]
 
 function getAllMoments(){
